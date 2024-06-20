@@ -5,8 +5,6 @@ library('logger')
 # dur = duration (in hours)
 # low_temp = threshold below which a temperature is considered extremely low (in °C)
 
-data <- readRDS("C:/Users/typhaine.rousteau/OneDrive - LPO/MoveApps/SelectIndividual-byTemperature/SelectIndividual-byTemperature/tests/testthat/data/input3_move2loc_LatLon.rds")
-
 rFunction = function(data, time_now = NULL, dur = 24, low_temp = 5)
   {
     Sys.setenv(tz = "UTC") 
