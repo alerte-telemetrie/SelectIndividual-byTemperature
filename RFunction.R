@@ -38,7 +38,7 @@ rFunction = function(data, time_now = NULL, dur = 24, low_temp = 5)
         min_temp <- as.numeric(min(data_dur$external_temperature))
         
         # Is the temperature over the last defined hours below the minimum temperature threshold ?
-        if( min_temp <- low_temp) {
+        if( min_temp < low_temp) {
             Min_temp <- append(Min_temp, min_temp)
             Ind <- append(Ind, unique(mt_track_id(splitMoveStack)))
         }
@@ -54,7 +54,7 @@ rFunction = function(data, time_now = NULL, dur = 24, low_temp = 5)
         min_temp <- as.numeric(min(data_dur$eobs_temperature))
         
         # Is the temperature over the last defined hours below the minimum temperature threshold ?
-        if(min_temp <- low_temp) {
+        if(min_temp < low_temp) {
            Min_temp <- append(Min_temp, min_temp)
            Ind <- append(Ind, unique(mt_track_id(splitMoveStack)))
         }
