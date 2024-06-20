@@ -64,10 +64,5 @@
       "name": "LIFE Gyp'ACT",
       "comment": "Action T3.2.1"
     }
-  ],
-  "references": [
-    {
-      "url": "https://github.com/alerte-telemetrie/SelectIndividual-byTemperature/blob/master/README.md"
-    }
   ]
 }
