@@ -1,9 +1,10 @@
 {
+  "version": "1.0.0",
   "settings": [
     {
       "id": "time_now",
       "name": "Reference timestamp",
-      "description": "Define you reference time - the time from which you want to select 'back' your data. If your tags are still running and you are in the field, this is typically NOW. Here, if you dont enter anything, per default NOW will be used.",
+      "description": "Define you reference time - the time from which you want to select 'back' your data. If your tags are still running and you are in the field, this is typically NOW. Here, if you dont enter anything, per default NOW will be used. If you enter date, please make sure that the timestamp is in UTC and follows the format 'YYYY-mm-dd HH:MM:SS'",
       "defaultValue": null,
       "type": "INSTANT"
     },
